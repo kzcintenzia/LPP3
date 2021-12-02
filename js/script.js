@@ -202,3 +202,13 @@ searchInput.addEventListener('input', (e) => {
 const searchInputIngredient = document.querySelector('#ingredientsInput');
 const searchInputAppliance = document.querySelector('#appareilsInput');
 const searchInputDevice = document.querySelector('#ustencilesInput');
+
+export {
+  normalizeData,
+  removeDuplicate,
+  displayElements,
+};
+
+export { SearchField as default };
+
+export { displayRecipe as default };

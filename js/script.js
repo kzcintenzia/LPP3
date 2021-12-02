@@ -48,6 +48,34 @@ function removeDuplicate(array) {
   });
   return noDuplicate;
 }
+class SearchField {
+  constructor() {
+    // eslint-disable-next-line func-names
+    this.createSearchField = function (string) {
+      return `
+      <article class=article-${string}>
+        <div class="search__filter__element ${string}">
+            <span class="search__filter__label" id="currentFilter"
+              >${string}</span
+            >
+            <input
+              id="${string}Input"
+              type="text"
+              class="search__filter__input ${string}"
+              placeholder="${string}"
+            />
+            <div class="arrow"></div>
+          </div>
+          <ul
+          id="list${string}"
+            class="search__filter__list ${string}"
+          ></ul>
+          </article>`;
+    };
+  }
+}
+
+export { SearchField as default };
 
 //////////////THIS FUNCTION MAP THROUGH THE RECIPES ARRAY AND DISPLAY THEM///////////////
 function displayRecipe(array) {
@@ -103,8 +131,6 @@ function displayRecipe(array) {
     }).join('')
     return recipeResult;
 }
-
-export { displayRecipe as default };
 
 
 const searchInput = document.querySelector('#searchInput');

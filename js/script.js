@@ -211,4 +211,4 @@ export {
 
 export { SearchField as default };
 
-export { displayRecipe as default };
+export { displayRecipe as default2 };

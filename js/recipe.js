@@ -1781,5 +1781,3 @@ const recipes = [
     }
   });
   
-  export { recipes as default };
-  

@@ -75,8 +75,6 @@ class SearchField {
   }
 }
 
-export { SearchField as default };
-
 //////////////THIS FUNCTION MAP THROUGH THE RECIPES ARRAY AND DISPLAY THEM///////////////
 function displayRecipe(array) {
   const arraySorted = array.sort(function (a, b) {

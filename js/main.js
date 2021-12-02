@@ -1,1 +1,1 @@
-import {} from '.script.js';
+import {} from './script.js';

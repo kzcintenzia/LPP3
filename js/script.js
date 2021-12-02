@@ -1,4 +1,4 @@
-import recipes from './recipe.js';
+import recipes from './recipe';
 
 function displayElements() {
   const resultSection = document.querySelector('.result');

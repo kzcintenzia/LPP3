@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Les petits plats</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/02ed5f572e.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js"></script>
+    <!--<script src="./js/recipe.js"></script>-->
+    <script src="./js/recipe.json"></script>
+</head>
+<body>
+    <header>
+        <div><img class="logo" src="images/logo.png" alt="Les petits plats"></div>
+        <section class="search">
+            <form class="search__input" id="form">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette."
+                aria-label="Rechercher un ingrédient, appareil, ustensiles ou une recette."
+              />
+              <i class="fas fa-search"></i>
+            </form>
+          </section>
+        <div id="tagList">
+            <div id="listTagIngredient">
+            </div>
+            <div id="listTagAppareil">
+            </div>
+            <div id="listTagUstensile">
+            </div>
+        </div>
+        <div id="divIngredients" class="divList" tabindex="0">
+            <span class="spanIngredients">Ingédients</span>
+            <i class="fas fa-chevron-up"></i>
+            <div id="listIngredients" class="list">e
+            </div>
+        </div>
+        <div id="divAppareils" class="divList" tabindex="0">
+            <span class="spanAppareils">Appareils</span>
+            <i class="fas fa-chevron-up"></i>
+            <div id="listAppareils" class="list">
+            </div>
+        </div>
+        <div id="divUstensiles" class="divList" tabindex="0">
+            <span class="spanUstensiles">Ustensiles</span>
+            <i class="fas fa-chevron-up"></i>
+            <div id="listUstensiles" class="list">
+            </div>
+        </div>
+    </header>
+
+    <section class="result" id="result">
+        <!-- Liste des recettes -->
+    </section>
+</body>
+</html>

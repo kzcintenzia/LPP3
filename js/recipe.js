@@ -1779,6 +1779,6 @@ const recipes = [
       element.devices[i] =
         element.devices[i].charAt(0).toUpperCase() + element.devices[i].slice(1);
     }
-  });
+  });export { recipes as default };
   
   

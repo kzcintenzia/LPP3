@@ -50,7 +50,6 @@ function removeDuplicate(array) {
 }
 class SearchField {
   constructor() {
-    // eslint-disable-next-line func-names
     this.createSearchField = function (string) {
       return `
       <article class=article-${string}>
